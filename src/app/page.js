@@ -494,6 +494,10 @@ export default function Home() {
         </tbody>
       </table>
 
+      <button className="bg-blue-500 rounded-lg w-1/4  p-2 active:scale-100 hover:scale-105  text-white mt-5 transition-all">
+        Enviar
+      </button>
+
       <table className="border-collapse border-2 border-black w-1/2 mt-10">
         <tbody>
           <tr>
