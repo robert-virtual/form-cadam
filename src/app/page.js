@@ -1,113 +1,600 @@
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <main className="p-2">
+      <h1 className="font-bold">
+        U. V. JUNE 2023 MID YEAR PERFORMANCE DASHBOARD
+      </h1>
+      <table className="border-collapse border-2 border-black w-1/2">
+        <tbody>
+          <tr>
+            <td
+              colSpan={4}
+              className="border-2 border-black p-2 bg-slate-700 text-white"
+            >
+              <h2 className="text-center">Department/Group/Company</h2>
+            </td>
+          </tr>
+          <tr>
+            <td className="border-2 border-black p-2 bg-slate-500 text-white">
+              <label>Employee</label>
+            </td>
+            <td className="border-2 border-black p-2 ">
+              <input className="outline-none" type="text" />
+            </td>
+            <td className="border-2 border-black p-2 bg-slate-500 text-white">
+              <label>Date</label>
+            </td>
+            <td className="border-2 border-black p-2">
+              <input className="outline-none" type="date" />
+            </td>
+          </tr>
+          <tr>
+            <td className="border-2 border-black p-2 bg-slate-500 text-white">
+              <label>Department</label>
+            </td>
+            <td colSpan={3} className="border-2 border-black p-2">
+              <input className="outline-none" type="text" />
+            </td>
+          </tr>
+          <tr>
+            <td className="border-2 border-black p-2 bg-slate-500 text-white">
+              <label>Title</label>
+            </td>
+            <td colSpan={3} className="border-2 border-black p-2">
+              <input className="outline-none" type="text" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <table className="border-collapse border-2 border-black mt-10 w-1/2">
+        <tbody>
+          <tr>
+            <td
+              colSpan={4}
+              className="border-2 border-black p-2 bg-slate-700 text-white"
+            >
+              <h2 className="text-center">Performance Rating</h2>
+            </td>
+          </tr>
+          <tr>
+            <td className="border-2 border-black p-2  bg-blue-100 ">
+              <textarea
+                className="outline-none bg-blue-100"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+      <table className="border-collapse border-2 border-black w-1/2 mt-10">
+        <tbody>
+          <tr className="bg-gray-300">
+            <td className="p-2 " colSpan={2}>
+              <span className="text-center">Ranks</span>
+            </td>
+            <td className="p-2 ">
+              <div className="flex items-center">
+                <div className="bg-green-600 w-5 h-5 inline-block m-2"></div>
+                <span className="text-center">Exceeding</span>
+              </div>
+            </td>
+            <td className="p-2 ">
+              <div className="flex items-center">
+                <div className="bg-blue-600 w-5 h-5 inline-block m-2"></div>
+                <span className="text-center">Meeting</span>
+              </div>
+            </td>
+            <td className="p-2 ">
+              <div className="flex items-center">
+                <div className="bg-red-600 w-5 h-5 inline-block m-2"></div>
+                <span className="text-center">Below</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td
+              rowSpan={7}
+              className="border-2 border-black p-2 bg-slate-500 text-white"
+            >
+              <span>Objetives</span>
+            </td>
+          </tr>
+          <tr>
+            <td className="border-2 border-black p-2 ">
+              <a href="#">Knowledge Skills & Abilities</a>
+            </td>
+            <td className="border-2 border-black p-2 ">
+              <label className="flex items-center">
+                <div className="bg-green-600 w-5 h-5 inline-block m-2"></div>
+                <input name="KnowledgeSkills&Abilities" type="radio" />
+              </label>
+            </td>
+            <td className="border-2 border-black p-2 ">
+              <label className="flex items-center">
+                <div className="bg-blue-600 w-5 h-5 inline-block m-2"></div>
+                <input name="KnowledgeSkills&Abilities" type="radio" />
+              </label>
+            </td>
+            <td className="border-2 border-black p-2 ">
+              <label className="flex items-center">
+                <div className="bg-red-600 w-5 h-5 inline-block m-2"></div>
+                <input name="KnowledgeSkills&Abilities" type="radio" />
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td className="border-2 border-black p-2 ">
+              <a href="#">Communication</a>
+            </td>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+            <td className="border-2 border-black p-2 ">
+              <label className="flex items-center">
+                <div className="bg-green-600 w-5 h-5 inline-block m-2"></div>
+                <input name="Communication" type="radio" />
+              </label>
+            </td>
+            <td className="border-2 border-black p-2 ">
+              <label className="flex items-center">
+                <div className="bg-blue-600 w-5 h-5 inline-block m-2"></div>
+                <input name="Communication" type="radio" />
+              </label>
+            </td>
+            <td className="border-2 border-black p-2 ">
+              <label className="flex items-center">
+                <div className="bg-red-600 w-5 h-5 inline-block m-2"></div>
+                <input name="Communication" type="radio" />
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td className="border-2 border-black p-2 ">
+              <a href="#">Ownership</a>
+            </td>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
+            <td className="border-2 border-black p-2 ">
+              <label className="flex items-center">
+                <div className="bg-green-600 w-5 h-5 inline-block m-2"></div>
+                <input name="Ownership" type="radio" />
+              </label>
+            </td>
+            <td className="border-2 border-black p-2 ">
+              <label className="flex items-center">
+                <div className="bg-blue-600 w-5 h-5 inline-block m-2"></div>
+                <input name="Ownership" type="radio" />
+              </label>
+            </td>
+            <td className="border-2 border-black p-2 ">
+              <label className="flex items-center">
+                <div className="bg-red-600 w-5 h-5 inline-block m-2"></div>
+                <input name="Ownership" type="radio" />
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td className="border-2 border-black p-2 ">
+              <a href="#">Performance</a>
+            </td>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+            <td className="border-2 border-black p-2 ">
+              <label className="flex items-center">
+                <div className="bg-green-600 w-5 h-5 inline-block m-2"></div>
+                <input name="Performance" type="radio" />
+              </label>
+            </td>
+            <td className="border-2 border-black p-2 ">
+              <label className="flex items-center">
+                <div className="bg-blue-600 w-5 h-5 inline-block m-2"></div>
+                <input name="Performance" type="radio" />
+              </label>
+            </td>
+            <td className="border-2 border-black p-2 ">
+              <label className="flex items-center">
+                <div className="bg-red-600 w-5 h-5 inline-block m-2"></div>
+                <input name="Performance" type="radio" />
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td className="border-2 border-black p-2 ">
+              <a href="#">Department Spesific Goals</a>
+            </td>
+
+            <td className="border-2 border-black p-2 ">
+              <label className="flex items-center">
+                <div className="bg-green-600 w-5 h-5 inline-block m-2"></div>
+                <input name="DepartmentSpesificGoals" type="radio" />
+              </label>
+            </td>
+            <td className="border-2 border-black p-2 ">
+              <label className="flex items-center">
+                <div className="bg-blue-600 w-5 h-5 inline-block m-2"></div>
+                <input name="DepartmentSpesificGoals" type="radio" />
+              </label>
+            </td>
+            <td className="border-2 border-black p-2 ">
+              <label className="flex items-center">
+                <div className="bg-red-600 w-5 h-5 inline-block m-2"></div>
+                <input name="DepartmentSpesificGoals" type="radio" />
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td className="border-2 border-black p-2 ">
+              <a href="#">Professional Values</a>
+            </td>
+
+            <td className="border-2 border-black p-2 ">
+              <label className="flex items-center">
+                <div className="bg-green-600 w-5 h-5 inline-block m-2"></div>
+                <input name="ProfessionalValues" type="radio" />
+              </label>
+            </td>
+            <td className="border-2 border-black p-2 ">
+              <label className="flex items-center">
+                <div className="bg-blue-600 w-5 h-5 inline-block m-2"></div>
+                <input name="ProfessionalValues" type="radio" />
+              </label>
+            </td>
+            <td className="border-2 border-black p-2 ">
+              <label className="flex items-center">
+                <div className="bg-red-600 w-5 h-5 inline-block m-2"></div>
+                <input name="ProfessionalValues" type="radio" />
+              </label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table className="border-collapse border-2 border-black mt-10 w-1/2">
+        <tbody>
+          <tr>
+            <td
+              colSpan={4}
+              className="border-2 border-black p-2 bg-slate-800 text-white"
+            >
+              <h2 className="text-center">Leadership Summary</h2>
+            </td>
+          </tr>
+          <tr>
+            <td className="border-2 border-black p-2">
+              <textarea className="outline-none" cols="30" rows="10"></textarea>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table className="border-collapse border-2 border-black w-1/2 mt-10">
+        <tbody>
+          <tr>
+            <td
+              colSpan={4}
+              className="border-2 border-black p-2 bg-slate-700 text-white"
+            >
+              <span className="text-center">
+                Use this page for aditional feedback based on the tasks listed
+                below
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td className="border-2 border-black p-2 bg-slate-500 text-white">
+              <label>Knowledge Skills & Abilities</label>
+            </td>
+            <td className="border-2 border-black p-2 ">
+              <textarea
+                className="outline-none"
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td className="border-2 border-black p-2 bg-slate-500 text-white">
+              <label>Communication</label>
+            </td>
+            <td colSpan={3} className="border-2 border-black p-2">
+              <textarea
+                className="outline-none"
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td className="border-2 border-black p-2 bg-slate-500 text-white">
+              <label>Ownership</label>
+            </td>
+            <td colSpan={3} className="border-2 border-black p-2">
+              <textarea
+                className="outline-none"
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td className="border-2 border-black p-2 bg-slate-500 text-white">
+              <label>Performance</label>
+            </td>
+            <td colSpan={3} className="border-2 border-black p-2">
+              <textarea
+                className="outline-none"
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+              ></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td className="border-2 border-black p-2 bg-slate-500 text-white">
+              <label>Department Spesific Goals</label>
+            </td>
+            <td colSpan={3} className="border-2 border-black p-2">
+              <textarea
+                className="outline-none"
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+              ></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td className="border-2 border-black p-2 bg-slate-500 text-white">
+              <label>Professionalism</label>
+            </td>
+            <td colSpan={3} className="border-2 border-black p-2">
+              <textarea
+                className="outline-none"
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+              ></textarea>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table className="border-collapse border-2 border-black mt-10 w-1/2">
+        <tbody>
+          <tr>
+            <td
+              colSpan={4}
+              className="border-2 border-black p-2 bg-slate-500 text-white"
+            >
+              <h2 className="text-center">Next steps</h2>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table className="border-collapse border-2 border-black mt-10 w-1/2">
+        <tbody>
+          <tr>
+            <td
+              colSpan={4}
+              className="border-2 border-black p-2 bg-slate-800 text-white"
+            >
+              <h2 className="text-center">Smart Goal</h2>
+            </td>
+          </tr>
+          <tr>
+            <td className="border-2 border-black p-2">
+              <textarea className="outline-none" cols="30" rows="10"></textarea>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table className="border-collapse border-2 border-black mt-10 w-1/2">
+        <tbody>
+          <tr>
+            <td
+              colSpan={4}
+              className="border-2 border-black p-2 bg-slate-800 text-white"
+            >
+              <h2 className="text-center">Leader's Comment for development</h2>
+            </td>
+          </tr>
+          <tr>
+            <td className="border-2 border-black p-2">
+              <textarea className="outline-none" cols="30" rows="10"></textarea>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table className="border-collapse border-2 border-black mt-10 w-1/2">
+        <tbody>
+          <tr>
+            <td
+              colSpan={4}
+              className="border-2 border-black p-2 bg-slate-800 text-white"
+            >
+              <h2 className="text-center">
+                Employee's Comment for development
+              </h2>
+            </td>
+          </tr>
+          <tr>
+            <td className="border-2 border-black p-2">
+              <textarea className="outline-none" cols="30" rows="10"></textarea>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table className=" mt-10 ">
+        <tbody>
+          <tr>
+            <td className=" p-2 bg-gray-200">
+              <input className="outline-none bg-gray-200" />
+            </td>
+            <td colSpan={2}>
+              <div className="invisible">___________________</div>
+            </td>
+            <td className=" p-2 bg-gray-200">
+              <input className="outline-none bg-gray-200" />
+            </td>
+          </tr>
+          <tr>
+            <td className=" p-2 bg-slate-600 text-white ">
+              <span className="text-center">Leader's Name</span>
+            </td>
+            <td colSpan={2}>
+              <div className="invisible">___________________</div>
+            </td>
+            <td className=" p-2 bg-slate-600 text-white ">
+              <span className="text-center">Date & Signature</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table className=" mt-10 ">
+        <tbody>
+          <tr>
+            <td className=" p-2 bg-gray-200 ">
+              <input className="outline-none bg-gray-200" />
+            </td>
+            <td colSpan={2}>
+              <div className="invisible">___________________</div>
+            </td>
+            <td className=" p-2 bg-gray-200 ">
+              <input className="outline-none bg-gray-200" />
+            </td>
+          </tr>
+
+          <tr>
+            <td className=" p-2 bg-slate-600 text-white">
+              <span className="text-center">Employee's Name</span>
+            </td>
+            <td colSpan={2}>
+              <div className="invisible">___________________</div>
+            </td>
+            <td className=" p-2 bg-slate-600 text-white">
+              <span className="text-center">Date & Signature</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table className="border-collapse border-2 border-black w-1/2 mt-10">
+        <tbody>
+          <tr>
+            <td
+              colSpan={4}
+              className="border-2 border-black p-2 bg-slate-700 text-white"
+            >
+              <span className="text-center">Objectives and Expectations</span>
+            </td>
+          </tr>
+          <tr>
+            <td className="border-2 border-black p-2 bg-slate-500 text-white">
+              <label>Knowledge Skills & Abilities</label>
+            </td>
+            <td className="border-2 border-black p-2 ">
+              <p>
+                Core competencies that form career readiness <br /> Satisfactory
+                level of skill and knowledge <br /> Broad business understanding
+                and adaptability
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td className="border-2 border-black p-2 bg-slate-500 text-white">
+              <label>Communication</label>
+            </td>
+            <td colSpan={3} className="border-2 border-black p-2">
+              <p>
+                Listening Skills <br />
+                The Channel - Proper way of sending the message <br />
+                The Environment - Context of communication
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td className="border-2 border-black p-2 bg-slate-500 text-white">
+              <label>Ownership</label>
+            </td>
+            <td colSpan={3} className="border-2 border-black p-2">
+              <p>
+                Accountability in the workplace <br />
+                Trust in the workplace <br />
+                Taking ownership <br />
+                Motivation <br />
+                Proactive approach <br />
+                Communicating about career goals <br />
+                Take advantage of Learning opportunities <br />
+                Forward Thinking attitude
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td className="border-2 border-black p-2 bg-slate-500 text-white">
+              <label>Performance</label>
+            </td>
+            <td colSpan={3} className="border-2 border-black p-2">
+              <p>
+                Results & Actions <br />
+                Written, verifiable mutually understood expectations
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td className="border-2 border-black p-2 bg-slate-500 text-white">
+              <label>Department Spesific Goals</label>
+            </td>
+            <td colSpan={3} className="border-2 border-black p-2">
+              <p>
+                Specific goals for department as established by the department
+                head <br /> Goal focus for the betterness of department
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td className="border-2 border-black p-2 bg-slate-500 text-white">
+              <label>Professionalism</label>
+            </td>
+            <td colSpan={3} className="border-2 border-black p-2">
+              <p>
+                Professional Appearance <br />
+                Reliable <br />
+                Ethical Behavior <br />
+                Organized <br />
+                Accountable <br />
+                Professional Language <br />
+                Separates Personal and Professional <br />
+                Positive Attitude <br />
+                Emotional Control <br />
+                Effective time management <br />
+                Focused <br />
+                Poised <br />
+                Respectful of Others <br />
+                Strong communicator <br />
+                Possesses Soft Skills <br />
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </main>
-  )
+  );
 }
